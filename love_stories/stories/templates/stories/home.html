@@ -1,0 +1,21 @@
+{% extends 'stories/base.html' %}
+{% load static %}
+{% block contaxt %}
+        <div class="row txt">
+            <div class="text-center p-5 col-sm-8">
+                {% include 'stories/navbar.html' %}
+                <h1 class="p-4 my-1 bordering">Wellcome To Love Stories</h1>
+                <hr>
+                <h2 class="p-3">"Life is a flower of which love is the Honey"</h2>
+                <h2 class="p-3">"True love stories never have endings"</h2>
+                <h2 class="p-3">Your love gives me the reason to smile </h2>
+                <h2> at the start of the day and all the while</h2>
+            </div>
+            <div class="col-sm-4">
+                <img class="p-3" src="{% static 'images/images2.jpg' %}" alt="" srcset="" height="200px">
+                <img class="p-3" src="{% static 'images/images5.jpg' %}" alt="" srcset=""height="200px">
+                <img class="p-3" src="{% static 'images/img4.jpg' %}" alt="" srcset=""height="200px">
+
+            </div>
+        </div>   
+{% endblock %}

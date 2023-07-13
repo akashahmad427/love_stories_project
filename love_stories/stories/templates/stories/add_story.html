@@ -1,0 +1,41 @@
+{% extends 'stories/base.html' %}
+{% load static %}
+{% block contaxt %}
+<div class="col-sm-12 sty">
+    <h1 class="text-white my-5">Write Story.</h1>
+    {% for message in messages %}
+            <span class="alert alert-info my-3" >{{message}}</span>
+    {% endfor %}
+    <form action="" method="POST">
+       {% csrf_token %}
+        <p>
+        <label for="id_name"><h2>Name:</h2></label>
+        <input type="text" name="name" class="form-control" maxlength="90" required id="id_name">
+        
+        
+      </p>
+    
+      
+      <p>
+        <label for="id_moral"><h2>Moral:</h2></label>
+        <input type="text" name="moral" class="form-control" maxlength="200" required id="id_moral">
+        
+        
+      </p>
+    
+      
+      <p>
+        <label for="id_story"><h2>Story:</h2></label>
+        <textarea name="story" cols="40" rows="10" class="form-control" maxlength="5000" required id="id_story">
+    </textarea>
+        
+        
+          
+        
+      </p>
+        <input type="submit" value="Submit" class="btn btn-primary my-3 offset-4">
+        <a href="/" class="btn btn-warning my-3 offset-1">Cancel</a>
+    </form>
+
+</div>
+{% endblock contaxt %}

@@ -1,0 +1,41 @@
+.img{
+    background-image: url(../images/hand.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 100%;
+    min-height: 100%;
+        
+}
+
+.sty{
+    background-image: url(../images/book.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+            
+            min-width: 100%;
+            min-height: 100%;
+        
+}
+
+.bordering{
+    color: yellow;
+    font: 4em sans-serif;
+    font-style: italic;
+}
+
+.col{
+    color: black;
+}
+
+
+.bo{
+    background-color: darkseagreen;
+    color: black;
+}
+.txt{
+    font-style: oblique;
+}
+

@@ -1,0 +1,21 @@
+{% extends 'stories/base.html' %}
+{% load static %}
+{% block contaxt %}
+    <div class="container row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+            {% for fm in form %}
+              <div class="mt-4 p-4 rounded bo">
+                <h1 class="my-1">Name : {{fm.name}}</h1>
+                <p><h5>Moral : {{fm.moral}}</h5></p>
+                <p>Story : {{fm.story}}</p>
+              </div>
+              {% endfor %}
+              <div class="text-center">
+                 <a href="{% url 'home' %}" class="btn btn-info my-2">Home</a>
+                 <a href="{% url 'add_story' %}" class="btn btn-warning">Write Story</a>
+              </div>
+        </div>
+        
+    </div>
+{% endblock %}
